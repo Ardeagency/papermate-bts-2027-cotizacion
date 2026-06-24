@@ -416,9 +416,9 @@ document.querySelectorAll('.rev').forEach(el=>io.observe(el));
 /* Aviso de apertura del link — push vía ntfy.sh */
 (function(){
   try{
-    if(sessionStorage.getItem('arde_open_pinged'))return;
-    sessionStorage.setItem('arde_open_pinged','1');
-    var TOPIC='https://ntfy.sh/arde-newell-bts2027-9f3kqz7x';
+    if(sessionStorage.getItem('arde_open_newellbts'))return;
+    sessionStorage.setItem('arde_open_newellbts','1');
+    var TOPIC='https://ntfy.sh/arde-cotizaciones-7k2pqz9x';
     function ping(loc){
       try{
         fetch(TOPIC,{method:'POST',
